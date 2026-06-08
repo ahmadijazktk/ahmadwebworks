@@ -8,11 +8,13 @@ export default defineConfig({
   plugins: [
     tanstackStart({
       server: { entry: "src/server.ts" },
+      prerender: { enabled: true },
     }),
     react(),
     tailwindcss(),
     tsconfigPaths(),
   ],
 });
+
 
 
