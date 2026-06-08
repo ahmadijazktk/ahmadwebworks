@@ -19,11 +19,11 @@ export function Contact() {
 
     emailjs
       .sendForm(
-        import.meta.env.VITE_EMAILJS_SERVICE_ID || "",
-        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "",
+        "service_7yjuw2f",
+        "template_532weyn",
         formRef.current,
         {
-          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "",
+          publicKey: "dB7fr2zfhy-omu3qZ",
         }
       )
       .then(
