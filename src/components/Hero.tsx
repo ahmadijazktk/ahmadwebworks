@@ -4,7 +4,8 @@ import { ArrowDownRight, Download } from "lucide-react";
 import { Magnetic } from "./Magnetic";
 import { ScrambleText } from "./ScrambleText";
 import { Clock } from "./Clock";
-import cvAsset from "@/assets/ahmad-cv.pdf.asset.json";
+// import cvAsset from "@/assets/ahmad-cv.pdf.asset.json";
+
 
 const roles = ["Full-Stack Developer", "WordPress Architect", "WooCommerce Engineer", "React Craftsman"];
 
@@ -109,7 +110,7 @@ export function Hero() {
             </Magnetic>
             <Magnetic strength={0.4}>
               <a
-                href={cvAsset.url}
+                href="#"
                 download="AhmadIjaz_Fullstack_CV.pdf"
                 data-hover
                 className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full border border-foreground/30 bg-transparent px-6 py-3.5 text-[11px] font-medium uppercase tracking-[0.22em] text-foreground transition-colors hover:border-foreground"
@@ -123,12 +124,13 @@ export function Hero() {
         </div>
       </div>
 
+
       {/* footnote bar */}
       <div className="mx-auto mt-16 flex max-w-[1500px] items-end justify-between text-[10px] uppercase tracking-[0.3em] text-muted-foreground sm:mt-24">
         <div>① Scroll to begin</div>
         <div className="hidden sm:block">A folio in seven movements</div>
         <div>2026 ⇢</div>
       </div>
-    </section>
+    </section >
   );
 }
