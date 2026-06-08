@@ -6,15 +6,15 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [
-    tanstackStart({
-      server: { entry: "src/server.ts" },
-      prerender: { enabled: true },
-    }),
+    tanstackStart(),
     react(),
     tailwindcss(),
     tsconfigPaths(),
   ],
 });
+
+
+
 
 
 
